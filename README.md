@@ -15,7 +15,6 @@
 - <input type="checkbox" checked />We should be able to check out and run the solution.
 - <input type="checkbox" checked />We would like to see some unit tests.
 <br/>
----
 <br/>
 <h1 align="center">BRIGHTE EATS APP</h1>
 <br/>
@@ -38,7 +37,6 @@
 - [Prerequisites](#prerequisites)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Running with Docker](#running-with-docker)
 - [Testing](#testing)
 
 ## Features
