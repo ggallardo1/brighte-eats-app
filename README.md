@@ -17,3 +17,63 @@
 <br/>
 ---
 <br/>
+<h1 align="center">BRIGHTE EATS APP</h1>
+<br/>
+<p align="center">
+    <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
+    <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
+    <img src="https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+    <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/typeorm-FE0803?style=for-the-badge&logo=typeorm&logoColor=white" />
+    <img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" />
+</p>
+
+## Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [GraphQL API](#graphql-api)
+- [Running with Docker](#running-with-docker)
+- [Testing](#testing)
+
+## Features
+
+- Register leads with their contact details and service interests.
+- Query all leads or a specific lead by ID.
+- Easy-to-use GraphQL API for interaction.
+
+## Prerequisites
+- Docker ([download here](https://www.docker.com/products/docker-desktop/))
+
+## Technologies Used
+- Node.js
+- TypeScript
+- Express
+- GraphQL
+- TypeORM
+- PostgreSQL
+- Docker
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ggallardo1/brighte-eats-app.git
+   cd brighte-eats-apps
+   cp .env.example .env
+
+2. **Install dependencies:**  
+Using Docker, make sure [docker desktop](https://www.docker.com/products/docker-desktop/) is installed:
+    ```bash
+    docker-compose up --build
+
+3. **Testing**  
+    ```bash
+    npm test
