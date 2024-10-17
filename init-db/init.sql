@@ -1,0 +1,1 @@
+CREATE DATABASE brighte_eats_test;
