@@ -38,8 +38,6 @@
 - [Prerequisites](#prerequisites)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [GraphQL API](#graphql-api)
 - [Running with Docker](#running-with-docker)
 - [Testing](#testing)
 
