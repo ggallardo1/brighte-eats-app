@@ -1,7 +1,7 @@
 // app/backend/src/schema.ts
 
 // Import necessary GraphQL types and functions
-import { GraphQLObjectType, GraphQLString, GraphQLList, GraphQLID, GraphQLNonNull, GraphQLSchema } from 'graphql';
+import { GraphQLObjectType, GraphQLString, GraphQLList, GraphQLID, GraphQLNonNull, GraphQLSchema, GraphQLInputObjectType } from 'graphql';
 import { getRepository } from 'typeorm';
 import { Lead } from './entity/Lead';
 
@@ -16,6 +16,18 @@ const LeadType = new GraphQLObjectType({
     postcode: { type: GraphQLString },
     services: { type: new GraphQLList(GraphQLString) },
   }),
+});
+
+// Define the LeadInput type
+const LeadInputType = new GraphQLInputObjectType({
+  name: 'LeadInput',
+  fields: {
+    name: { type: new GraphQLNonNull(GraphQLString) },
+    email: { type: new GraphQLNonNull(GraphQLString) },
+    mobile: { type: new GraphQLNonNull(GraphQLString) },
+    postcode: { type: new GraphQLNonNull(GraphQLString) },
+    services: { type: new GraphQLNonNull(new GraphQLList(GraphQLString)) },
+  },
 });
 
 // Defines the Root Query type for GraphQL
